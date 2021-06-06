@@ -21,7 +21,7 @@ const Home = () => {
         apiCall();
     },[])
     return (
-        <div>
+        <div className="main">
               <Nav/>
             <div className="container">
             <div>
@@ -33,11 +33,8 @@ const Home = () => {
                      list && 
                      list.map(
                          (e,index)=>{
-                             return (
-                                 <div>
-                              <img src={`https://image.tmdb.org/t/p/w200${e.poster_path}`} alt={`Title : ${e.title}`} key={index} className="img"/>
-                                </div>
-                             )
+                             return <img src={`https://image.tmdb.org/t/p/w200${e.poster_path}`} alt={`Title : ${e.title}`} key={index} className="img"/>
+                    
                          }
                      )
                     

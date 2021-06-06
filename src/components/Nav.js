@@ -4,9 +4,9 @@ const Nav = () => {
     return (
         <div className="navbar">
             <div className="logo">
-                Movie Mania
+               <h1> Movie Mania </h1>
             </div>
-            <div classNames="search">
+            <div className="search">
                 <input type="search" className="ip_s" placeholder="Enter movie name to search"/>
             </div>
             <div className="menus">

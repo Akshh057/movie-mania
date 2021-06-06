@@ -2,8 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+.App{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    min-height: 100vh;
+    width: 100vw;
 }
 .navbar{
+    height: 10vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,7 +89,7 @@ footer{
     padding: 1em;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(5,3fr);
+    grid-template-columns: repeat(4,minmax(315px,3fr)); 
     grid-gap: 20px;
 }
 .img{
@@ -85,4 +98,15 @@ footer{
 }
 .img:hover{
     transform: scale(1.1);
+}
+@media(max-width:780px){
+    .navbar{
+        height: 25vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fit,minmax(315px,1fr)); 
+        margin-left: 40px;
+    }
 }
