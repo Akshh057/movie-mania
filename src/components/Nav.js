@@ -6,6 +6,9 @@ const Nav = () => {
             <div className="logo">
                 Movie Mania
             </div>
+            <div classNames="search">
+                <input type="search" className="ip_s" placeholder="Enter movie name to search"/>
+            </div>
             <div className="menus">
                 <ul className="menu">
                     <li> <Link to='/'>Home</Link></li>

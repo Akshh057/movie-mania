@@ -23,6 +23,17 @@
     text-decoration: none;
     margin: 0 1em;
 }
+.search{
+    width: auto;
+}
+.ip_s{
+    height: 35px;
+    width: 300px;
+}
+::placeholder{
+    text-align: center;
+    color: black;
+}
 /* footer */
 footer{
     background-color: #1f1d1d;
@@ -41,7 +52,7 @@ footer{
 .contact{
     margin-right: 3em;
 }
-
+ 
 .copyright{
     background-color: black;
     text-align: center;
@@ -49,4 +60,29 @@ footer{
 }
 .icons li{
     list-style: none;
+}
+.container{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1em;
+    background-color: rgb(15, 22, 15);
+}
+.grid{
+    padding: 1em;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5,3fr);
+    grid-gap: 20px;
+}
+.img{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.img:hover{
+    transform: scale(1.1);
 }
